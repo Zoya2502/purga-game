@@ -99,6 +99,9 @@ const scenes = {
         
         { text: "— Ты заражена.", img: "img/purga_full.png" },
         { text: "— Я в курсе, — цокнула та, отмахнувшись жестом руки, — Но пока ещё думаю ясно. А значит, у нас есть шанс. Если ты не тупица.", img: "img/purga_face.png" },
+        ],
+
+    part2: [
         { text: "Она пошла первой, не оглядываясь. Нагнать её вам ничего не стоило.\n— Есть убежище, — сказала та, когда они углубились в лес. — Шаманки. Если успеем — меня вытащат. Если нет… — она пожала плечами.\nНесказанные слова повисли в воздухе, не нуждаясь в озвучке.", img: "img/purga_went.png" },
         
         { text: "Вы хотели спросить, зачем ей ВЫ, но она опередила.", img: "img/purga_not_question.png" },
@@ -108,10 +111,8 @@ const scenes = {
         { text: "Загадка 1. Sul gesto e la citazione\n\n«In principio ero il gesto del Creatore che infondeva la vita nell'argilla. Secoli dopo, un ribelle e omicida, in fuga dalla giustizia, ha 'rubato' la mia mano. Ma questa volta non l'ha data a Dio Padre, bensì all'Uomo — il Figlio di Dio.\n\nIn una stanza oscura, tagliata da una luce drammatica, questa mano non indica Adamo, ma un peccatore seduto al banco delle imposte».\n\nDi chi è questa mano (nell'originale e nella citazione) e di quale quadro del 'ribelle' si tratta?", img: "img/purga_question.png" },
         { text: "Пурга смотрела на вас неприкрытым интересом.\n— Я люблю эту историю. В ней много дерзости. Как и во мне.", img: "img/purga_face.png" },
         
-        { text: "Вы ответили: ...", img: "img/purga_full.png", riddleId: 0 }
-    ],
+        { text: "Вы ответили: ...", img: "img/purga_full.png", riddleId: 0 },
 
-    part2: [
         { text: "Лес редел. Снег под ногами был тёмным. Через некоторое время её дыхание стало тяжелее. Она всё чаще касалась шеи. Рана на ней будто зудела, захватывая всё внимание, мешая мыслить ясно. Пурга стала раздражительнее, периодически рычала и бросала оскорбления в воздух, ни на кого конкретного не нацеленные.", img: "img/purga_went.png" },
         { text: "— Не смотри так, — рыкнула она, сузив глаза — Я всё ещё красивее тебя.", img: "img/purga_not_smile.png" },
         
@@ -129,10 +130,8 @@ const scenes = {
         { text: "Загадка 2. Sul testimone invisibile\n\n«Sono un occhio convesso, appeso alla parete della camera nuziale di un mercante. Intorno a me, in minuscoli medaglioni, sono dipinte dieci scene della Passione di Cristo.\n\nMa la cosa più interessante è dentro di me. Rifletto ciò che lo spettatore non vede direttamente: le spalle degli sposi (o soci in affari?) e due figure che varcano la soglia. Una di queste figure porta il nome dell'artista che ha audacemente scritto sopra la mia cornice: '...è stato qui'».\n\nDi quale oggetto e di quale dipinto si tratta?", img: "img/purga_question.png" },
         { text: "Она прислонилась к стене, остановившись на пару секунд, но глаза всё ещё блестели.\n— Свидетель, который всегда всё видит, — прошептала Пурга. — Даже то, что художник не должен был показывать.", img: "img/purga_face.png" },
 
-        { text: "Вы дали ответ: ...", img: "img/purga_face.png", riddleId: 1 }
-    ],
-
-    part3: [
+        { text: "Вы дали ответ: ...", img: "img/purga_face.png", riddleId: 1 },
+    
         { text: "Не выразив на сей раз никакой видимой эмоции, северянка просто кивнула и, зашипев, с тяжестью отошла от стены, размяв плечи, и заставила идти себя дальше.", img: "img/purga_poker_face.png" },
         { text: "Последний подъём был самым тяжёлым. Пурга начала спотыкаться. Вы поддерживали её.", img: "img/purga_went.png" },
         { text: "— Не вздумай меня жалеть, — прошипела она, оттолкнув его. — Я не для этого тебя веду.", img: "img/purga_not_smile.png" },
@@ -155,6 +154,7 @@ const scenes = {
 
         { text: "И вы послушались: ...", img: "img/purga_face.png", riddleId: 2 }
     ],
+
 
     // --- НОВАЯ СЦЕНА: ПЛОХАЯ КОНЦОВКА ---
     bad_ending: [
