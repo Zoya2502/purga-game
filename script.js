@@ -95,76 +95,76 @@ const scenes = {
         },
 
         { text: "Она замерла. Медленно коснулась лапой укуса.\nМолчание длилось пару секунд, но казалось вечностью.", img: "img/purga_face.png" },
-        { text: "— Значит, всё-таки достали, — сказала она со странным холодным спокойствием в голосе. — Ладно. Тогда времени ещё меньше.", img: "img/purga_face.png" },
+        { text: "— Значит, всё-таки достали, — сказала она со странным холодным спокойствием в голосе. — Ладно. Тогда времени ещё меньше.", img: "img/purga_face_idiot.png" },
         
         { text: "— Ты заражена.", img: "img/purga_full.png" },
         { text: "— Я в курсе, — цокнула та, отмахнувшись жестом руки, — Но пока ещё думаю ясно. А значит, у нас есть шанс. Если ты не тупица.", img: "img/purga_face.png" },
-        { text: "Она пошла первой, не оглядываясь. Нагнать её вам ничего не стоило.\n— Есть убежище, — сказала та, когда они углубились в лес. — Шаманки. Если успеем — меня вытащат. Если нет… — она пожала плечами.\nНесказанные слова повисли в воздухе, не нуждаясь в озвучке.", img: "img/purga_face.png" },
+        { text: "Она пошла первой, не оглядываясь. Нагнать её вам ничего не стоило.\n— Есть убежище, — сказала та, когда они углубились в лес. — Шаманки. Если успеем — меня вытащат. Если нет… — она пожала плечами.\nНесказанные слова повисли в воздухе, не нуждаясь в озвучке.", img: "img/purga_went.png" },
         
-        { text: "Вы хотели спросить, зачем ей ВЫ, но она опередила.", img: "img/purga_full.png" },
+        { text: "Вы хотели спросить, зачем ей ВЫ, но она опередила.", img: "img/purga_not_question.png" },
 
-        { text: "— Мне нужен собеседник. И свидетель. А ещё… — она усмехнулась. — Мне скучно идти с человеком, который не способен думать. Так что, если хочешь дожить — отвечай. И шевелись давай, — добавила та, ускоряя шаг.", img: "img/purga_face.png" },
+        { text: "— Мне нужен собеседник. И свидетель. А ещё… — она усмехнулась. — Мне скучно идти с человеком, который не способен думать. Так что, если хочешь дожить — отвечай. И шевелись давай, — добавила та, ускоряя шаг.", img: "img/purga_smile.png" },
         
-        { text: "Загадка 1. Sul gesto e la citazione\n\n«In principio ero il gesto del Creatore che infondeva la vita nell'argilla. Secoli dopo, un ribelle e omicida, in fuga dalla giustizia, ha 'rubato' la mia mano. Ma questa volta non l'ha data a Dio Padre, bensì all'Uomo — il Figlio di Dio.\n\nIn una stanza oscura, tagliata da una luce drammatica, questa mano non indica Adamo, ma un peccatore seduto al banco delle imposte».\n\nDi chi è questa mano (nell'originale e nella citazione) e di quale quadro del 'ribelle' si tratta?", img: "img/purga_face.png" },
+        { text: "Загадка 1. Sul gesto e la citazione\n\n«In principio ero il gesto del Creatore che infondeva la vita nell'argilla. Secoli dopo, un ribelle e omicida, in fuga dalla giustizia, ha 'rubato' la mia mano. Ma questa volta non l'ha data a Dio Padre, bensì all'Uomo — il Figlio di Dio.\n\nIn una stanza oscura, tagliata da una luce drammatica, questa mano non indica Adamo, ma un peccatore seduto al banco delle imposte».\n\nDi chi è questa mano (nell'originale e nella citazione) e di quale quadro del 'ribelle' si tratta?", img: "img/purga_question.png" },
         { text: "Пурга смотрела на вас неприкрытым интересом.\n— Я люблю эту историю. В ней много дерзости. Как и во мне.", img: "img/purga_face.png" },
         
         { text: "Вы ответили: ...", img: "img/purga_full.png", riddleId: 0 }
     ],
 
     part2: [
-        { text: "Лес редел. Снег под ногами был тёмным. Через некоторое время её дыхание стало тяжелее. Она всё чаще касалась шеи. Рана на ней будто зудела, захватывая всё внимание, мешая мыслить ясно. Пурга стала раздражительнее, периодически рычала и бросала оскорбления в воздух, ни на кого конкретного не нацеленные.", img: "img/purga_full.png" },
-        { text: "— Не смотри так, — рыкнула она, сузив глаза — Я всё ещё красивее тебя.", img: "img/purga_face.png" },
+        { text: "Лес редел. Снег под ногами был тёмным. Через некоторое время её дыхание стало тяжелее. Она всё чаще касалась шеи. Рана на ней будто зудела, захватывая всё внимание, мешая мыслить ясно. Пурга стала раздражительнее, периодически рычала и бросала оскорбления в воздух, ни на кого конкретного не нацеленные.", img: "img/purga_went.png" },
+        { text: "— Не смотри так, — рыкнула она, сузив глаза — Я всё ещё красивее тебя.", img: "img/purga_not_smile.png" },
         
         { 
             text: "Вы смотрели на её оскал.", 
-            img: "img/purga_face.png",
+            img: "img/purga_smile_danger.png",
             choices: [
                 { label: "Поднять руки (примирение)", reaction: "Вы не спорили, лишь подняли руки в знак примирения и сменили точку своего взгляда." },
                 { label: "Отвести взгляд", reaction: "Вы отвели взгляд, чтобы не провоцировать её." }
             ]
         },
 
-        { text: "— Слушай вторую. – вдруг бросила она посреди пути. – И не тяни. Голова у меня начинает… шуметь.", img: "img/purga_face.png" },
+        { text: "— Слушай вторую. – вдруг бросила она посреди пути. – И не тяни. Голова у меня начинает… шуметь.", img: "img/purga_not_smile.png" },
 
-        { text: "Загадка 2. Sul testimone invisibile\n\n«Sono un occhio convesso, appeso alla parete della camera nuziale di un mercante. Intorno a me, in minuscoli medaglioni, sono dipinte dieci scene della Passione di Cristo.\n\nMa la cosa più interessante è dentro di me. Rifletto ciò che lo spettatore non vede direttamente: le spalle degli sposi (o soci in affari?) e due figure che varcano la soglia. Una di queste figure porta il nome dell'artista che ha audacemente scritto sopra la mia cornice: '...è stato qui'».\n\nDi quale oggetto e di quale dipinto si tratta?", img: "img/purga_face.png" },
+        { text: "Загадка 2. Sul testimone invisibile\n\n«Sono un occhio convesso, appeso alla parete della camera nuziale di un mercante. Intorno a me, in minuscoli medaglioni, sono dipinte dieci scene della Passione di Cristo.\n\nMa la cosa più interessante è dentro di me. Rifletto ciò che lo spettatore non vede direttamente: le spalle degli sposi (o soci in affari?) e due figure che varcano la soglia. Una di queste figure porta il nome dell'artista che ha audacemente scritto sopra la mia cornice: '...è stato qui'».\n\nDi quale oggetto e di quale dipinto si tratta?", img: "img/purga_question.png" },
         { text: "Она прислонилась к стене, остановившись на пару секунд, но глаза всё ещё блестели.\n— Свидетель, который всегда всё видит, — прошептала Пурга. — Даже то, что художник не должен был показывать.", img: "img/purga_face.png" },
 
         { text: "Вы дали ответ: ...", img: "img/purga_face.png", riddleId: 1 }
     ],
 
     part3: [
-        { text: "Не выразив на сей раз никакой видимой эмоции, северянка просто кивнула и, зашипев, с тяжестью отошла от стены, размяв плечи, и заставила идти себя дальше.", img: "img/purga_full.png" },
-        { text: "Последний подъём был самым тяжёлым. Пурга начала спотыкаться. Вы поддерживали её.", img: "img/purga_full.png" },
-        { text: "— Не вздумай меня жалеть, — прошипела она, оттолкнув его. — Я не для этого тебя веду.", img: "img/purga_face.png" },
+        { text: "Не выразив на сей раз никакой видимой эмоции, северянка просто кивнула и, зашипев, с тяжестью отошла от стены, размяв плечи, и заставила идти себя дальше.", img: "img/purga_poker_face.png" },
+        { text: "Последний подъём был самым тяжёлым. Пурга начала спотыкаться. Вы поддерживали её.", img: "img/purga_went.png" },
+        { text: "— Не вздумай меня жалеть, — прошипела она, оттолкнув его. — Я не для этого тебя веду.", img: "img/purga_not_smile.png" },
         
         { 
             text: "Вы решаете...", 
-            img: "img/purga_face.png",
+            img: "img/purga_went.png",
             choices: [
                 { label: "Спросить вслух", reaction: "— Тогда зачем?" },
                 { label: "Подумать про себя", reaction: "Глаза задали вопрос за вас: тогда зачем?" }
             ]
         },
 
-        { text: "Она усмехнулась.\n— Чтобы ты запомнил, как выглядят последние минуты красивого ума.", img: "img/purga_face.png" },
-        { text: "У края утёса, где стояла древняя статуя, она остановилась и присела на землю. Грудь тяжело вздымалась, а лапы коснулись головы в попытках облегчить настойчивый стук в висках.", img: "img/purga_full.png" },
+        { text: "Она усмехнулась.\n— Чтобы ты запомнил, как выглядят последние минуты красивого ума.", img: "img/purga_smile.png" },
+        { text: "У края утёса, где стояла древняя статуя, она остановилась и присела на землю. Грудь тяжело вздымалась, а лапы коснулись головы в попытках облегчить настойчивый стук в висках.", img: "img/purga_went.png" },
 
-        { text: "Загадка 3. Sulla pietra e il tempo\n\n«Nella storia dell'arte siamo i tre più celebri, ma esistiamo in tempi diversi.\n\nIl primo (opera di Donatello) ha già vinto: è sereno e calpesta la testa mozzata.\n\nIl secondo (opera del Bernini) è in movimento furioso: si morde il labbro e sta per lanciare.\nIo sono il terzo. Sono nato da un blocco di marmo chiamato 'Il Gigante', considerato irrimediabilmente rovinato per 40 anni. Non agisco e non festeggio. Sono pura tensione, l'istante prima del colpo. Nella mia mano non c'è spada, solo una pietra e una fionda, e il mio sguardo corrucciato scruta il nemico.\n\nDi quale statua specifica si tratta?", img: "img/purga_full.png" },
+        { text: "Загадка 3. Sulla pietra e il tempo\n\n«Nella storia dell'arte siamo i tre più celebri, ma esistiamo in tempi diversi.\n\nIl primo (opera di Donatello) ha già vinto: è sereno e calpesta la testa mozzata.\n\nIl secondo (opera del Bernini) è in movimento furioso: si morde il labbro e sta per lanciare.\nIo sono il terzo. Sono nato da un blocco di marmo chiamato 'Il Gigante', considerato irrimediabilmente rovinato per 40 anni. Non agisco e non festeggio. Sono pura tensione, l'istante prima del colpo. Nella mia mano non c'è spada, solo una pietra e una fionda, e il mio sguardo corrucciato scruta il nemico.\n\nDi quale statua specifica si tratta?", img: "img/purga_question.png" },
 
-        { text: "Пурга смотрела вдаль. Зрачки были расширены.\n— Ответь, — тихо сказала она. — И давай посмотрим, кто из нас переживёт эту ночь.", img: "img/purga_face.png" },
+        { text: "Пурга смотрела вдаль. Зрачки были расширены.\n— Ответь, — тихо сказала она. — И давай посмотрим, кто из нас переживёт эту ночь.", img: "img/purga_smile_danger.png" },
 
         { text: "И вы послушались: ...", img: "img/purga_face.png", riddleId: 2 }
     ],
 
     // --- НОВАЯ СЦЕНА: ПЛОХАЯ КОНЦОВКА ---
     bad_ending: [
-        { text: "Вы ответили неверно. Где-то ошиблись, а может и везде… Сказать наверняка вы не могли, но всё поняли по звереющему недовольному лицу своей собеседницы.\nС уст слетел смех, жуткий, уже ей не принадлежащий. К вам обернулась уже не та, что вы встретили в начале. Кривая улыбка расползлась по морде, она оскалила зубы, глаза залились кровью.", img: "img/purga_face.png" },
-        { text: "— Какая жалость, — хохотнула она, расплываясь в улыбке ещё шире, что казалось и вовсе невозможным. — Терпеть не могу бездарные умы. — хрипло прошипела та и вцепилась вам в плечо.", img: "img/purga_face.png" },
-        { text: "Последнее, что вы увидели — белую гриву в крови и снег, медленно темнеющий под ней.", img: "img/purga_full.png" }
+        { text: "Вы ответили неверно. Где-то ошиблись, а может и везде… Сказать наверняка вы не могли, но всё поняли по звереющему недовольному лицу своей собеседницы.\nС уст слетел смех, жуткий, уже ей не принадлежащий. К вам обернулась уже не та, что вы встретили в начале. Кривая улыбка расползлась по морде, она оскалила зубы, глаза залились кровью.", img: "img/purga_smile_danger.png" },
+        { text: "— Какая жалость, — хохотнула она, расплываясь в улыбке ещё шире, что казалось и вовсе невозможным. — Терпеть не могу бездарные умы. — хрипло прошипела та и вцепилась вам в плечо.", img: "img/purga_smile_danger2.png" },
+        { text: "Последнее, что вы увидели — белую гриву в крови и снег, медленно темнеющий под ней.", img: "img/purga_smile_danger2.png" }
     ],
 
     ending: [
-        { text: "Пурга улыбнулась — впервые искренне. Почти тепло.\n— Ну вот. Я знала, что ты не зря мне попался, — она почти по-дружески похлопала вас по плечу, поднявшись с земли и на этот раз даже позволив помочь ей дойти.", img: "img/purga_face.png" },
+        { text: "Пурга улыбнулась — впервые искренне. Почти тепло.\n— Ну вот. Я знала, что ты не зря мне попался, — она почти по-дружески похлопала вас по плечу, поднявшись с земли и на этот раз даже позволив помочь ей дойти.", img: "img/purga_smile.png" },
         { text: "Они успели. Шаманка выбежала им навстречу, ругаясь и прижимая ладони к шее Пурги.\n— Жить будешь, — буркнула она.", img: "img/purga_full.png" },
         { text: "Кошка, уже теряя сознание, шепнула:\n— Видишь? Интеллект — тоже оружие.", img: "img/purga_full.png" }
     ]
