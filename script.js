@@ -1,9 +1,10 @@
 // --- АУДИО СИСТЕМА ---
 const audio = {
-    menu: new Audio('sounds/menu.mp3'),
-    forest: new Audio('sounds/forest.mp3'),
-    bush: new Audio('sounds/bush.mp3'),
-    scream: new Audio('sounds/scream.mp3')
+    // ТЕПЕРЬ ИСПОЛЬЗУЕМ OGG
+    menu: new Audio('sounds/menu.ogg'),
+    forest: new Audio('sounds/forest.ogg'),
+    bush: new Audio('sounds/bush.ogg'),
+    scream: new Audio('sounds/scream.ogg')
 };
 
 audio.menu.loop = true;
