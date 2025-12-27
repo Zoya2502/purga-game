@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пурга.exe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <!-- Фон и персонаж -->
+        <div id="visual-area">
+            <!-- Картинка меню (Шапка) -->
+            <img id="menu-bg" src="img/header.png" alt="Menu Art">
+            
+            <!-- Персонаж (изначально скрыт) -->
+            <img id="character-img" src="" alt="Character" class="hidden">
+        </div>
+
+        <!-- Интерфейс -->
+        <div id="ui-area">
+            <!-- Главное меню -->
+            <div id="start-screen">
+                <h1 class="title">Пурга.exe</h1>
+                <button id="start-btn" onclick="startGame()">Начать игру</button>
+            </div>
+
+            <!-- Блок диалогов -->
+            <div id="dialogue-box" class="hidden">
+                <p id="dialogue-text"></p>
+                
+                <!-- Варианты ответа в диалоге -->
+                <div id="dialogue-choices" class="hidden"></div>
+
+                <button id="next-btn" onclick="nextLine()">Next >></button>
+            </div>
+
+            <!-- Блок загадок -->
+            <div id="riddle-box" class="hidden">
+                <p id="riddle-text"></p>
+                <div id="choices-container"></div>
+            </div>
+
+            <!-- Концовка -->
+            <div id="ending-screen" class="hidden">
+                <h2>Конец</h2>
+                <p>Вы выжили. Пока что.</p>
+                <button id="restart-btn" onclick="triggerFinalScreamer()">В начало</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- СКРИМЕР НА ВЕСЬ ЭКРАН -->
+    <div id="screamer-overlay" class="hidden">
+        <img src="img/screamer.png" alt="SCREAMER">
+        <h1 id="screamer-text">ТЫ ПРОИГРАЛ</h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
