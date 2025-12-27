@@ -1,6 +1,5 @@
 // --- АУДИО СИСТЕМА ---
 const audio = {
-    // ТЕПЕРЬ ИСПОЛЬЗУЕМ OGG
     menu: new Audio('sounds/menu.ogg'),
     forest: new Audio('sounds/forest.ogg'),
     bush: new Audio('sounds/bush.ogg'),
@@ -157,6 +156,13 @@ const scenes = {
         { text: "И вы послушались: ...", img: "img/purga_face.png", riddleId: 2 }
     ],
 
+    // --- НОВАЯ СЦЕНА: ПЛОХАЯ КОНЦОВКА ---
+    bad_ending: [
+        { text: "Вы ответили неверно. Где-то ошиблись, а может и везде… Сказать наверняка вы не могли, но всё поняли по звереющему недовольному лицу своей собеседницы.\nС уст слетел смех, жуткий, уже ей не принадлежащий. К вам обернулась уже не та, что вы встретили в начале. Кривая улыбка расползлась по морде, она оскалила зубы, глаза залились кровью.", img: "img/purga_face.png" },
+        { text: "— Какая жалость, — хохотнула она, расплываясь в улыбке ещё шире, что казалось и вовсе невозможным. — Терпеть не могу бездарные умы. — хрипло прошипела та и вцепилась вам в плечо.", img: "img/purga_face.png" },
+        { text: "Последнее, что вы увидели — белую гриву в крови и снег, медленно темнеющий под ней.", img: "img/purga_full.png" }
+    ],
+
     ending: [
         { text: "Пурга улыбнулась — впервые искренне. Почти тепло.\n— Ну вот. Я знала, что ты не зря мне попался, — она почти по-дружески похлопала вас по плечу, поднявшись с земли и на этот раз даже позволив помочь ей дойти.", img: "img/purga_face.png" },
         { text: "Они успели. Шаманка выбежала им навстречу, ругаясь и прижимая ладони к шее Пурги.\n— Жить будешь, — буркнула она.", img: "img/purga_full.png" },
@@ -280,7 +286,9 @@ function checkRiddleAnswer(riddleId, selectedIndex) {
     if (selectedIndex === rData.correctIndex) {
         handleSceneTransition();
     } else {
-        triggerScreamer("ТЫ ПРОИГРАЛ");
+        // ЕСЛИ ОТВЕТ НЕВЕРНЫЙ -> ЗАГРУЖАЕМ ПЛОХУЮ КОНЦОВКУ
+        // 'death' - это маркер для функции handleSceneTransition, чтобы она включила скример ПОСЛЕ текста
+        loadScene(scenes.bad_ending, 'death'); 
     }
 }
 
@@ -289,16 +297,19 @@ function handleSceneTransition() {
     
     // Смена фонов при переходе между частями
     if (nextStep === 'part2') {
-        visualArea.style.backgroundImage = backgrounds.forest; // ФОН 2
+        visualArea.style.backgroundImage = backgrounds.forest; 
         loadScene(scenes.part2, 'part3');
     } else if (nextStep === 'part3') {
-        visualArea.style.backgroundImage = backgrounds.cliff; // ФОН 3
+        visualArea.style.backgroundImage = backgrounds.cliff; 
         loadScene(scenes.part3, 'ending');
     } else if (nextStep === 'ending') {
         loadScene(scenes.ending, 'finish');
     } else if (nextStep === 'finish') {
         dialogueBox.classList.add('hidden');
         endingScreen.classList.remove('hidden');
+    } else if (nextStep === 'death') {
+        // ВОТ ТУТ срабатывает скример после прочтения плохой концовки
+        triggerScreamer("ТЫ ПРОИГРАЛ");
     }
 }
 
