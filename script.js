@@ -152,7 +152,7 @@ const scenes = {
 
         { text: "Загадка 3. Sulla pietra e il tempo\n\n«Nella storia dell'arte siamo i tre più celebri, ma esistiamo in tempi diversi.\n\nIl primo (opera di Donatello) ha già vinto: è sereno e calpesta la testa mozzata.\n\nIl secondo (opera del Bernini) è in movimento furioso: si morde il labbro e sta per lanciare.\nIo sono il terzo. Sono nato da un blocco di marmo chiamato 'Il Gigante', considerato irrimediabilmente rovinato per 40 anni. Non agisco e non festeggio. Sono pura tensione, l'istante prima del colpo. Nella mia mano non c'è spada, solo una pietra e una fionda, e il mio sguardo corrucciato scruta il nemico.\n\nDi quale statua specifica si tratta?", img: "img/purga_face_pow_on_face.png" },
 
-        { text: "Пурга смотрела вдаль. Зрачки были расширены.\n— Ответь, — тихо сказала она. — И давай посмотрим, кто из нас переживёт эту ночь.", img: "img/purga_smile_danger.png" },
+        { text: "Пурга смотрела вдаль. Зрачки были расширены.\n— Ответь, — тихо сказала она. — И давай посмотрим, кто из нас переживёт эту ночь.", img: "img/purga_face_face.png" },
 
         { text: "И вы послушались: ...", img: "img/purga_face.png", riddleId: 2 }
     ],
