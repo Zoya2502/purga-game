@@ -120,12 +120,12 @@ const scenes = {
             text: "Вы смотрели на её оскал.", 
             img: "img/purga_smile_danger.png",
             choices: [
-                { label: "Поднять руки (примирение)", reaction: "Вы не спорили, лишь подняли руки в знак примирения и сменили точку своего взгляда." },
+                { label: "Поднять лапы (примирение)", reaction: "Вы не спорили, лишь подняли лапы в знак примирения и сменили точку своего взгляда." },
                 { label: "Отвести взгляд", reaction: "Вы отвели взгляд, чтобы не провоцировать её." }
             ]
         },
 
-        { text: "— Слушай вторую. – вдруг бросила она посреди пути. – И не тяни. Голова у меня начинает… шуметь.", img: "img/purga_not_smile.png" },
+        { text: "— Слушай вторую, — вдруг бросила она посреди пути. — И не тяни. Голова у меня начинает… шуметь.", img: "img/purga_not_smile.png" },
 
         { text: "Загадка 2. Sul testimone invisibile\n\n«Sono un occhio convesso, appeso alla parete della camera nuziale di un mercante. Intorno a me, in minuscoli medaglioni, sono dipinte dieci scene della Passione di Cristo.\n\nMa la cosa più interessante è dentro di me. Rifletto ciò che lo spettatore non vede direttamente: le spalle degli sposi (o soci in affari?) e due figure che varcano la soglia. Una di queste figure porta il nome dell'artista che ha audacemente scritto sopra la mia cornice: '...è stato qui'».\n\nDi quale oggetto e di quale dipinto si tratta?", img: "img/purga_question.png" },
         { text: "Она прислонилась к стене, остановившись на пару секунд, но глаза всё ещё блестели.\n— Свидетель, который всегда всё видит, — прошептала Пурга. — Даже то, что художник не должен был показывать.", img: "img/purga_face.png" },
