@@ -1,4 +1,4 @@
-// --- АУДИО СИСТЕМА ---
+//музыка
 const audio = {
     menu: new Audio('sounds/menu.ogg'),
     forest: new Audio('sounds/forest.ogg'),
@@ -15,19 +15,19 @@ audio.scream.volume = 0.5;
 audio.bush.volume = 0.5;   
 audio.bush.playbackRate = 1.5; 
 
-// --- ФОНЫ ЛОКАЦИЙ ---
+// фон
 const backgrounds = {
     ruins: "url('img/bg1.jpg')",
     forest: "url('img/bg2.jpg')",
     cliff: "url('img/bg3.jpg')"
 };
 
-// --- ДАННЫЕ ИГРЫ ---
+//данные для игры
 const riddlesData = [
     {
         options: [
             "Рука Адама. «Сотворение Адама», Микеланджело.",
-            "Рука Христа. «Призвание апостола Матфея», Караваджо.", // Правильный
+            "Рука Христа. «Призвание апостола Матфея», Караваджо.", 
             "Рука Иуды. «Тайная вечеря», Леонардо да Винчи.",
             "Рука Бога. «Страшный суд», Микеланджело."
         ],
@@ -37,7 +37,7 @@ const riddlesData = [
         options: [
             "Зеркало. «Менины», Диего Веласкес.",
             "Шар гадалки. «Спаситель мира», Леонардо да Винчи.",
-            "Зеркало. «Портрет четы Арнольфини», Ян ван Эйк.", // Правильный
+            "Зеркало. «Портрет четы Арнольфини», Ян ван Эйк.", 
             "Отражение в воде. «Нарцисс», Караваджо."
         ],
         correctIndex: 2
@@ -45,7 +45,7 @@ const riddlesData = [
     {
         options: [
             "«Давид» Донателло (бронзовый).",
-            "«Давид» Микеланджело.", // Правильный
+            "«Давид» Микеланджело.", 
             "«Давид» Бернини.",
             "«Персей» Челлини."
         ],
@@ -60,7 +60,7 @@ const italianScreamers = [
     "IL TEMPO È FINITO!"
 ];
 
-// СЦЕНАРИЙ
+//сюжет
 const scenes = {
     part1: [
         { text: "— Эй. Живой?", img: "img/purga_face.png" },
@@ -171,12 +171,11 @@ const scenes = {
 };
 
 
-// --- ПЕРЕМЕННЫЕ СОСТОЯНИЯ ---
+//переменные игры
 let currentScene = [];
 let sceneIndex = 0;
 let hasInteracted = false;
 
-// --- ЭЛЕМЕНТЫ DOM ---
 const visualArea = document.getElementById('visual-area');
 const menuBg = document.getElementById('menu-bg');
 const charImg = document.getElementById('character-img');
@@ -189,7 +188,7 @@ const endingScreen = document.getElementById('ending-screen');
 const screamerOverlay = document.getElementById('screamer-overlay');
 const screamerText = document.getElementById('screamer-text');
 
-// --- ЛОГИКА АУДИО ---
+//настройка музыки
 document.body.addEventListener('click', () => {
     if (!hasInteracted) {
         audio.menu.play().catch(e => console.log("Ждем взаимодействия"));
@@ -197,19 +196,17 @@ document.body.addEventListener('click', () => {
     }
 });
 
-// --- ФУНКЦИИ ---
-
+//функции игры
 function startGame() {
     startScreen.classList.add('hidden');
     menuBg.classList.add('hidden'); 
     charImg.classList.remove('hidden');
     
-    // АУДИО
+    //музыка
     audio.menu.pause();
     audio.menu.currentTime = 0;
     audio.forest.play();
 
-    // Загружаем 1 часть и ставим фон 1
     visualArea.style.backgroundImage = backgrounds.ruins; 
     loadScene(scenes.part1, 'part2'); 
 }
@@ -301,10 +298,8 @@ function handleSceneTransition() {
     if (nextStep === 'part2') {
         loadScene(scenes.part2, 'part3');
     } else if (nextStep === 'part3') {
-        // Убрали смену фона здесь, так как она остается лесной
         loadScene(scenes.part3, 'ending');
     } else if (nextStep === 'ending') {
-        // ВОТ ЗДЕСЬ включаем фон bg3 (cliff) для хорошей концовки
         visualArea.style.backgroundImage = backgrounds.cliff;
         loadScene(scenes.ending, 'finish');
     } else if (nextStep === 'finish') {
